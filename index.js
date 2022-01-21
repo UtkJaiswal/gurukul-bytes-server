@@ -16,6 +16,6 @@ app.use(express.json());
 app.use('/api/auth',require('./routes/auth'));
 
 
-app.listen(port,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log(`App listening successfully`)
 })
